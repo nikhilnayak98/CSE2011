@@ -1,3 +1,4 @@
+# binary to gcd
 .data
 num : .byte 10
 
