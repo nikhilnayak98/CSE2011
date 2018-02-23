@@ -21,12 +21,10 @@ main:
 	
 	L1:
 		beq $t0, $zero, Exit
-
 		rem $t2, $t0, $t8
-
 		div $t0, $t0, $t8
-		
-		beq $t2, $t7, CTR 
+		beq $t2, $t7, CTR
+		j L1
 
 	CTR:
 		addi $t3, $t3, 1
